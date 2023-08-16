@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY BANK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    * {
+        font-family: 'Roboto', sans-serif;
+    }
+</style>
+
+<body class="m-20 text-center">
+    <h1 class="text-5xl font-bold  text-fuchsia-950 mb-10">
+        Welcome To My Bank</h1>
+
+    <section class="grid grid-cols-3 gap-10 ">
+        <div class="bg-red-300 text-white p-3 space-y-3 rounded-md ">
+            <h1 class="text-3xl font-bold">Deposit</h1>
+            <p class="text-3xl font-bold">
+                <span id="deposit-btn">00</span>$
+            </p>
+        </div>
+        <div class="bg-indigo-400 text-white p-3 space-y-3 rounded-md ">
+            <h1 class="text-3xl font-bold">Withdraw</h1>
+            <p class="text-3xl font-bold">
+                <span id="withdraw-btn">00</span>$
+            </p>
+        </div>
+        <div class="bg-fuchsia-400 text-white p-3 space-y-3 rounded-md ">
+            <h1 class="text-3xl font-bold">Balance</h1>
+            <p class="text-3xl font-bold">
+                <span id="balance-btn">1500</span>$
+            </p>
+        </div>
+    </section>
+    <!-- input section  -->
+    <section class="grid grid-cols-2 gap-5 mt-20 ">
+        <div class="bg-pink-400 text-white p-10 space-y-3 rounded-md text-left">
+
+            <h1 class="text-2xl font-semibold mb-4">Fill Up This Form First To<br> Deposit Money</h1>
+
+            <input class="p-1 rounded-md block text-black w-96 mb-5" type="text" name="" id="deposit-total"
+                placeholder="Type Amount">
+
+            <button class="py-2 px-5 block   rounded-md text-white font-bold mb-5 bg-pink-600"
+                id="btn-deposit">Submit</button>
+        </div>
+
+
+        <!-- 2nd div  -->
+        <div class="bg-rose-500 text-white p-10 space-y-3 rounded-md text-left">
+            <h1 class="text-2xl font-semibold mb-4"> Fill Up This Form First to <br> Withdraw Money</h1>
+
+            <input class="p-1 rounded-md block text-black w-96 mb-5" type="text" name="" id="balance-total"
+                placeholder="Type Amount">
+            <!-- button  -->
+
+            <button class="py-2 px-5 block  rounded-md text-white font-bold mb-5 bg-rose-800"
+                id="btn-balance">Submit</button>
+        </div>
+
+    </section>
+
+    <script src="deposit.js"></script>
+    <script src="withdraw.js"></script>
+</body>
+
+</html>

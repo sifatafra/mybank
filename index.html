@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>MY BANK</title>
+</head>
+
+<body class="m-20 text-center">
+    <h1 class="text-5xl font-bold  text-teal-500 mb-10">
+        Welcome To My Bank</h1>
+    <div class="bg-teal-100 p-10">
+        <h1 class="text-2xl font-bold text-pink-500 mb-10 "> Please Fill Up This Form First!</h1>
+        <!-- email  -->
+
+        <input class="p-2 block mb-5 w-96 mx-auto" type="email" name="" id="e-mail" placeholder="Enter Your Email">
+        <!-- password  -->
+
+        <input class="p-2 block mx-auto w-96 mb-5" type="password" name="" id="password"
+            placeholder="Type Your Password">
+        <!-- button  -->
+
+        <button class="p-2 block mx-auto w-60 rounded-md text-white font-bold mb-5 bg-pink-500" id="btn">Submit</button>
+    </div>
+
+    <script>
+
+        document.getElementById('btn').addEventListener('click', function () {
+            const myBank = document.getElementById('e-mail');
+            const email = myBank.value;
+            const myPass = document.getElementById('password');
+            const password = myPass.value;
+            if (email === 'ma@gmail.com' && password === '123456') {
+
+                window.location.href = 'money.html';
+            }
+            else {
+                console.log('invalid user');
+            }
+
+        })
+    </script>
+
+</body>
+
+</html>
